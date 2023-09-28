@@ -2,14 +2,12 @@ def WriteOutMultiplication(x,y):
     newStr = ""
     total = 0
     newStr += "\n" + (str("{:,}".format(x)) + " X " + str("{:,}".format(y)) + " = ") + "\n"
-    #newStr += str("{:,}".format(x)) + " X " + str("{:,}".format(y)) + " = "
     for i in range(y):
         if i == 0:
             newStr += str("{:,}".format(x))
         else:
             newStr += " + " + str("{:,}".format(x))
         total += x
-    #print("=" + str("{:,}".format(total)))
     newStr += " = " + str(total)
     return newStr
 
